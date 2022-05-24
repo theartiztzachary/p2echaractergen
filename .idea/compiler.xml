@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="p2echaractergen" target="1.5" />
+      <module name="p2echaractergen" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
