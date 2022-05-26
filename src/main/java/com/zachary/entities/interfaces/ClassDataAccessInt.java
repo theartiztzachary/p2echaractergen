@@ -1,7 +1,6 @@
 package com.zachary.entities.interfaces;
 
-public interface FighterDataAccessInterface {
+public interface ClassDataAccessInt {
 
     String getFighterData();
-
 }
