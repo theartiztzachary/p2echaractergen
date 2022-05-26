@@ -1,4 +1,4 @@
-package com.zachary.unitTests.testData;
+package com.zachary.testData;
 
 public class ClassInformation {
     public static String fighterClassData = "{\"count\":1,\"results\":[{\"_id\":\"8zn3cD6GSmoo1LW4\",\"data\":{\"abilityBoostLevels\":{\"value\":[5,10,15,20]},\"ancestryFeatLevels\":{\"value\":[1,5,9,13,17]},\"attacks\":{\"advanced\":1,\"martial\":2,\"other\":{\"name\":\"\",\"rank\":0},\"simple\":2,\"unarmed\":2},\"classDC\":1,\"classFeatLevels\":{\"value\":[1,2,4,6,8,10,12,14,16,18,20]},\"defenses\":{\"heavy\":1,\"light\":1,\"medium\":1,\"unarmored\":1},\"description\":{\"value\":\"<p><em>Fighting for honor, greed, loyalty, or simply the thrill of battle, you are an undisputed master of weaponry and combat techniques. You combine your actions through clever combinations of opening moves, finishing strikes, and counterattacks whenever your foes are unwise enough to drop their guard. Whether you are a knight, mercenary, sharpshooter, or blade master, you have honed your martial skills into an art form and perform devastating critical attacks on your enemies.</em></p>\\n" +

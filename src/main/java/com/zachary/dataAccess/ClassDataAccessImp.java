@@ -9,6 +9,8 @@ import retrofit2.Call;
 
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
+import java.io.IOException;
+
 public class ClassDataAccessImp implements ClassDataAccessInt {
     private static final Retrofit retrofit = new Retrofit.Builder()
             .addConverterFactory(ScalarsConverterFactory.create())
@@ -20,7 +22,13 @@ public class ClassDataAccessImp implements ClassDataAccessInt {
 
     @Override
     public String getFighterData() {
-        Call<String> fighterData = service.classData("Fighter", authKey);
-        return null;
+        String fighterData = "";
+        final Call<String> call = service.classData("Fighter", authKey);
+        try {
+            fighterData = call.execute().body();
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+        return fighterData;
     }
 }
