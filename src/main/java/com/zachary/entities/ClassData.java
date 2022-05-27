@@ -1,23 +1,23 @@
 package com.zachary.entities;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.HashMap;
 
 public class ClassData {
-    public ArrayList<Integer> abilityBoostLevels;
-    public ArrayList<Integer> generalFeatLevels;
-    public ArrayList<Integer> skillFeatLevels;
-    public ArrayList<Integer> ancestryFeatLevels;
+    public List<Integer> abilityBoostLevels;
+    public List<Integer> generalFeatLevels;
+    public List<Integer> skillFeatLevels;
+    public List<Integer> ancestryFeatLevels;
     public HashMap<String, String> offensiveProficiencies;
     public HashMap<String, String> defensiveProficiencies;
-    public HashMap<Integer, String> classFeatLevels;
-    public HashMap<String, String> classFeatures;
-    public String fullDescription;
+    public HashMap<String, Integer> generalClassFeatLevels;
+    public List<Integer> selectedClassFeatLevels;
+    public HashMap<String, Object> classFeatureData;
     public int hp;
-    public ArrayList<String> keyAbility;
-    public HashMap<String, String> perceptionProficiency;
+    public List<String> keyAbility;
+    public String perceptionProficiency;
     public HashMap<String, String> savingThrowsProficiencies;
-    public ArrayList<Integer> skillIncreaseLevels;
-    public ArrayList<String> baseTrainedSkills;
+    public List<Integer> skillIncreaseLevels;
+    public List<String> baseTrainedSkills;
     public int additionalTrainedSkills;
 }
