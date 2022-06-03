@@ -12,21 +12,21 @@ import java.io.IOException;
 public class FeatDataAccessImp implements FeatDataAccessInt {
     private static final Retrofit retrofit = new Retrofit.Builder()
             .addConverterFactory(ScalarsConverterFactory.create())
-            .baseUrl("https://api.pathfinder2.fr/v1/pf2/")
+            .baseUrl("https://wanderersguide.app/api/")
             .build();
 
     private static final PathfinderService service = retrofit.create(PathfinderService.class);
 
     private static final String authKey = System.getenv("AUTHKEY");
     @Override
-    public String getFighterFeats() {
-        String fighterFeatData = "";
-        final Call<String> call = service.classFeatData("fighter", authKey);
+    public String getFeat(String featName) {
+        String featData = "";
+        final Call<String> call = service.featData(featName, authKey);
         try {
-            fighterFeatData = call.execute().body();
+            featData = call.execute().body();
         } catch (IOException exception) {
             exception.printStackTrace();
         }
-        return fighterFeatData;
+        return featData;
     }
 }

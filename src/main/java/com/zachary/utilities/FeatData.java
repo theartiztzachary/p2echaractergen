@@ -4,6 +4,7 @@ import java.util.List;
 
 public class FeatData {
     public String name;
+    public String requirements;
     public String description;
     public String actionType;
     public int actionCount;

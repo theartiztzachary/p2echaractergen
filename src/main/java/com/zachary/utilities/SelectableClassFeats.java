@@ -1,0 +1,40 @@
+package com.zachary.utilities;
+
+public class SelectableClassFeats {
+    public static String[] fighterSelectFeats = {
+            "Agile Shield Grip", "Combat Assessment", "Double Slice",
+            "Everstand Stance", "Exacting Strike", "Point-Blank Shot",
+            "Power Attack", "Reactive Shield", "Snagging Strike",
+            "Sudden Charge", "Aggressive Block", "Assisting Shot",
+            "Brutish Shove", "Combat Grab", "Devoted Guardian",
+            "Dragging Strike", "Dueling Parry", "Intimidating Strike",
+            "Lunge", "Rebounding Toss", "United Assault", "Barreling Charge",
+            "Double Shot", "Dual-Handed Assault", "Everstand Strike", "Flip",
+            "Inured to Alchemy", "Knock Sense", "Knockdown", "Parting Shot",
+            "Powerful Shove", "Quick Reversal", "Shielded Stride", "Swipe",
+            "Twin Parry", "Advanced Weapon Training", "Advantageous Assault",
+            "Dazing Blow", "Disarming Stance", "Furious Focus",
+            "Guardian's Deflection", "Pain Tolerance", "Reflexive Shield",
+            "Revealing Stab", "Ricochet Stance", "Shatter Defenses",
+            "Shield Wall", "Shield Warden", "Triple Shot", "Blind-Fight",
+            "Disorienting Opening", "Dueling Riposte", "Disorienting Opening",
+            "Dueling Riposte", "Felling Strike", "Impassable Wall Stance",
+            "Incredible Aim", "Knight's Retaliation", "Mobile Shot Stance",
+            "Positioning Assault", "Quick Shield Block", "Resounding Bravery",
+            "Sudden Leap", "Agile Grace", "Certain Strike", "Combat Reflexes",
+            "Cut from the Air", "Debilitating Shot", "Disarming Twist",
+            "Disruptive Stance", "Fearsome Brute", "Improved Knockdown",
+            "Mirror Shield", "Overpowering Charge", "Twin Riposte",
+            "Brutal Finish", "Dueling Dance", "Flinging Shove",
+            "Improved Dueling Riposte", "Incredible Ricochet",
+            "Lunging Stance", "Paragon's Guard", "Spring Attack",
+            "Desperate Finisher", "Determination", "Guiding Finish",
+            "Guiding Riposte", "Improved Twin Riposte", "Stance Savant",
+            "Two-Weapon Flurry", "Whirlwind Strike", "Graceful Poise",
+            "Improved Reflexive Shield", "Multishot Stance",
+            "Overwhelming Blow", "Twinned Defense", "Impossible Volley",
+            "Savage Critical", "Smash from the Air", "Boundless Reprisals",
+            "Reflecting Riposte", "Sever Space", "Ultimate Flexibility",
+            "Weapon Supremacy"
+    };
+}

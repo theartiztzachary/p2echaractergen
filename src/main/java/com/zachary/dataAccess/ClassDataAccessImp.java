@@ -12,7 +12,7 @@ import java.io.IOException;
 public class ClassDataAccessImp implements ClassDataAccessInt {
     private static final Retrofit retrofit = new Retrofit.Builder()
             .addConverterFactory(ScalarsConverterFactory.create())
-            .baseUrl("https://api.pathfinder2.fr/v1/pf2/")
+            .baseUrl("https://wanderersguide.app/api/")
             .build();
     private static final PathfinderService service = retrofit.create(PathfinderService.class);
 
@@ -21,7 +21,7 @@ public class ClassDataAccessImp implements ClassDataAccessInt {
     @Override
     public String getFighterData() {
         String fighterData = "";
-        final Call<String> call = service.classData("Fighter", authKey);
+        final Call<String> call = service.classData("fighter", authKey);
         try {
             fighterData = call.execute().body();
         } catch (IOException exception) {

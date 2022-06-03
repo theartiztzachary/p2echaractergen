@@ -10,5 +10,6 @@ public interface PathfinderService {
     Call<String> classData(@Query("name") String className, @Header("Authorization") String authorization);
 
     @GET("feat")
-    Call<String> classFeatData(@Query("data.traits.value") String className, @Header("Authorization") String authorization);
+    Call<String> featData(@Query("name") String featName, @Header("Authorization") String authorization);
+
 }

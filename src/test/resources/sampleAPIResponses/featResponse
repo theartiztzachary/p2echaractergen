@@ -1,0 +1,43 @@
+{
+    "feat": {
+        "id": 698,
+        "name": "Attack of Opportunity",
+        "actions": "REACTION",
+        "level": -1,
+        "rarity": "COMMON",
+        "prerequisites": null,
+        "frequency": null,
+        "cost": null,
+        "trigger": "A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it’s using.",
+        "requirements": null,
+        "description": "You lash out at a foe that leaves an opening. Make a melee (action: Strike) against the triggering creature. If your attack is a critical hit and the trigger was a (trait: manipulate) action, you disrupt that action.",
+        "special": null,
+        "canSelectMultiple": 0,
+        "isDefault": 0,
+        "skillID": null,
+        "minProf": null,
+        "code": null,
+        "isCore": 0,
+        "genericType": "GENERAL-FEAT",
+        "genTypeName": null,
+        "isArchived": 0,
+        "contentSrc": "CRB",
+        "homebrewID": null,
+        "version": "1.0",
+        "createdAt": "2020-05-27T19:21:25.000Z",
+        "updatedAt": "2020-05-27T19:21:25.000Z"
+    },
+    "traits": [
+        {
+            "id": 8,
+            "name": "General",
+            "description": "A type of feat that any character can select, regardless of ancestry and class, as long as they meet the prerequisites. You can select a feat with this trait when your class grants a general feat.",
+            "isImportant": 0,
+            "isHidden": 1,
+            "isArchived": 0,
+            "homebrewID": null,
+            "createdAt": "2020-01-05T19:52:34.000Z",
+            "updatedAt": "2020-01-05T19:52:34.000Z"
+        }
+    ]
+}

@@ -23,31 +23,6 @@ public class FeatProcessingImp implements FeatProcessingInt {
     public List<FeatData> processFighterFeats() {
         List<FeatData> featList = new ArrayList<>();
 
-        String resultData = featDataAccess.getFighterFeats();
-        APIFeatResult apiFeatResult = gson.fromJson(resultData, APIFeatResult.class);
-        List<Result> resultList = apiFeatResult.getResults();
-
-        for (Result result : resultList) {
-            FeatData currentFeat = new FeatData();
-
-            currentFeat.name = result.getName();
-            currentFeat.description = result.getData().getDescription().getValue();
-            currentFeat.actionType = result.getData().getActionType().getValue();
-
-            try {
-                currentFeat.actionCount  = result.getData().getActions().getValue();
-            } catch (NullPointerException exception) {
-                currentFeat.actionCount = 0;
-            }
-
-            currentFeat.level = result.getData().getLevel().getValue();
-
-            currentFeat.traits.add(result.getData().getTraits().getRarity().getValue());
-            currentFeat.traits.addAll(result.getData().getTraits().getValue());
-
-            featList.add(currentFeat);
-        }
-
         return featList;
     }
 
